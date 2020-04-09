@@ -1,18 +1,18 @@
 var movingCount = function(m, n, k) {
-  // function getsum(num) {
-  //   let number = num.toString().split('')
-  //   return number.reduce((a, b) => Number(a) + Number(b), 0)
-  // }
   function getsum(num) {
-    let answer = 0;
+    let number = num.toString().split('')
+    return number.reduce((a, b) => Number(a) + Number(b))
+  }
+//   function getsum(num) {
+//     let answer = 0;
 
-    while(num) {
-        answer += num % 10;
-        num = Math.floor(num / 10);
-    }
+//     while(num) {
+//         answer += num % 10;
+//         num = Math.floor(num / 10);
+//     }
 
-    return answer;
-} 
+//     return answer;
+// } 
   let directionAry = [
     [-1, 0],
     [1, 0],
