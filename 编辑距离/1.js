@@ -17,6 +17,6 @@ var minDistance = function(word1, word2) {
       }
     }
   }
-  return dp[m][n]
+  return dp
 };
 console.log(minDistance(word1 = "horse", word2 = "ros"))
