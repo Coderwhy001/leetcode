@@ -8,3 +8,12 @@ var myAtoi = function(str) {
   }
   return number
 };
+
+// var fn = function (arrs) {
+//   let nums =  arrs.reduce((pre, cur) => {
+//     return pre.concat(Array.isArray(cur) ? fn(cur) : cur)
+//   }, [])
+//   return nums
+// }
+
+// console.log(fn([[1,2,[3,4,5,[6,7,8],9],10,[11,12]]]))
