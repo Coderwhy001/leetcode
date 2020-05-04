@@ -1,17 +1,15 @@
 var jump = function(nums) {
-  var steps = 0;
-  var canJumpMax = 0;
-  var last_canJumpMax = 0;
-  var len = nums.length;
-  for(var i = 0;i<len-1;i++){
-      canJumpMax = Math.max(canJumpMax,i+nums[i]);
-      if(last_canJumpMax == i){
-          last_canJumpMax= canJumpMax;
-          steps++;
-      }
-      if(last_canJumpMax >= len-1){
-          break;
-      }
+  let maxposition = 0;
+  let end = 0;
+  let step = 0
+  for (let i = 0; i < nums.length - 1; i++) {
+    maxposition = Math.max(maxposition, i + nums[i])
+    if (i === end) {
+      end = maxposition;
+      step++;
+    }
   }
-  return steps;
+  return step
 };
+
+console.log(jump([2,3,1,1,4]))
